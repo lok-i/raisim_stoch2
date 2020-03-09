@@ -24,3 +24,7 @@ Pybullet | ~5,000
 
 ## Ongoing_work:
 * Trying to resolve the above discrepancy and validate the accuracy and speed of raisim.
+
+## Instructions:
+* Clone the repo, and build it like any other cmake project by creating a $LOCAL_BUILD folder.
+* The user might have to change the path to fetch the urdf files accordingly in the speed_test.cpp file.
