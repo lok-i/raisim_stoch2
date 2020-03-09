@@ -2,7 +2,7 @@
 codebase transfer of stoch from pybullet to raisim
 
 ## Overview:
-This project is an attempt towards shifting the codebase of Stoch2 from the existing pybullet platform to raisim , a simulation engine developed but ETH Zurich owing to its speed and accuracy.
+This project is an attempt towards shifting the codebase of [Stoch2](https://cps.iisc.ac.in/research/walking-robot/)from the existing pybullet platform to raisim , a simulation engine developed but ETH Zurich owing to its speed and accuracy.
 
 ## Experiments:
 We tried compairing the speed of simulation of both the example files of ANYmal aswell as our model of Stoch2.
