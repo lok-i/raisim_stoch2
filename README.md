@@ -9,6 +9,14 @@ We tried compairing the speed of simulation of both the example files of ANYmal 
 
 ## Inference:
 * Raisim proves to be faster as promised when the files of ANYmal was used ,where the 3d files were of     .dae format.
+
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
+
+
+
 Platform | Speed / frequency (Hz)
 ------------ | -------------
 Raisim | ~23,000
