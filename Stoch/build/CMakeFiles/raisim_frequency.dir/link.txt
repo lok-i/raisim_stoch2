@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/raisim_frequency.dir/speed_test.cpp.o  -o raisim_frequency -Wl,-rpath,/usr/local/lib:/usr/local/lib/cmake/png/../../../lib /usr/local/lib/libraisim.so /usr/local/lib/cmake/png/../../../lib/libpng.so /usr/local/lib/libraisimODE.so 
