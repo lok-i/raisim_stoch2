@@ -20,3 +20,8 @@ Pybullet | ~15,000
 
 ## Ongoing work:
 * Code base transfer of the bot, from the a low level walking controller all the way towards a GYM environment entirely based on raisim for experimentation.
+
+## General Instructions:
+* The user is expected to give the right path's to the resources ie the urdf and the mesh files in their local systems.
+* The "Stoch2_renderer" requires the header files of anymal, and hence it can be run and built along with the examples of raisimOgre / a copy of it is to be present in a include folder in your current project directory
+
