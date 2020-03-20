@@ -15,16 +15,8 @@ Platform | Speed / frequency (Hz)
 Raisim | ~23,000
 Pybullet | ~15,000
 
-* However PyBullet is magnitudes faster when the files of our Stoch2 bot was used ,where the 3d files were of .obj format
+## Work done:
+* Our robot platform "Stoch2" was successfully brought in after converting using .obj files for modelling our robot.
 
-Platform | Speed / frequency (Hz)
------------- | -------------
-Raisim | ~6.17
-Pybullet | ~5,000
-
-## Ongoing_work:
-* Trying to resolve the above discrepancy and validate the accuracy and speed of raisim.
-
-## Instructions:
-* Clone the repo, and build it like any other cmake project by creating a $LOCAL_BUILD folder.
-* The user might have to change the path to fetch the urdf files accordingly in the speed_test.cpp file.
+## Ongoing work:
+* Code base transfer of the bot, from the a low level walking controller all the way towards a GYM environment entirely based on raisim for experimentation.
