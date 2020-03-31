@@ -60,8 +60,8 @@ int main(int argc, char **argv) {
   /// create raisim world
   raisim::World world;
   
- world.setGravity({0,0,0}); // by default gravity is set to {0,0,g}
-  world.setTimeStep(0.0025);
+ //world.setGravity({0,0,0}); // by default gravity is set to {0,0,g}
+  world.setTimeStep(0.001);
 
   auto vis = raisim::OgreVis::get();
 
@@ -143,13 +143,13 @@ int main(int argc, char **argv) {
   stoch->printOutBodyNamesInOrder();
  
   auto wire1 = world.addStiffWire(stoch, 5, {0,0,-0.14}, stoch, 3, {-0.03,0,-0.04}, 0.01);
-  vis->createGraphicalObject(wire1, "wire1", "red");
+  //vis->createGraphicalObject(wire1, "wire1", "red");
   auto wire2 = world.addStiffWire(stoch, 10, {0,0,-0.14}, stoch, 8, {-0.03,0,-0.04}, 0.01);
-  vis->createGraphicalObject(wire2, "wire2", "red");
+  //vis->createGraphicalObject(wire2, "wire2", "red");
   auto wire3 = world.addStiffWire(stoch, 15, {0,0,-0.14}, stoch, 13, {-0.03,0,-0.04}, 0.01);
-  vis->createGraphicalObject(wire3, "wire3", "red");
+  //vis->createGraphicalObject(wire3, "wire3", "red");
   auto wire4 = world.addStiffWire(stoch, 20, {0,0,-0.14}, stoch, 18, {-0.03,0,-0.04}, 0.01);
-  vis->createGraphicalObject(wire4, "wire4", "red");
+  //vis->createGraphicalObject(wire4, "wire4", "red");
 
  
   // lambda function for the controller

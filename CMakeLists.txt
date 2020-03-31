@@ -20,4 +20,5 @@ function(create_executable app_name file_name)
 endfunction()
 
 # robots
+create_executable(stoch2_benchmark Stoch2_walker_benchmark.cpp)
 create_executable(stoch2 Stoch2_walker.cpp)
