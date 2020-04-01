@@ -7,7 +7,7 @@ This project is an attempt towards shifting the codebase of [Stoch2](https://cps
 ## Experiments:
 We tried compairing the speed of simulation with our robot model Stoch incorporated in the platform.We conducted seperate test with implementations in both C++ and python whose results are tabulated below.
 <p align="center">
-   <img width="600" height="458" src="https://github.com/lok-i/raisim_stoch2/blob/master/edited.gif">
+   <img width="600" height="400" src="https://github.com/lok-i/raisim_stoch2/blob/master/edited.gif">
 </p>
 
 
