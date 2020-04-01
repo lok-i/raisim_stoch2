@@ -107,25 +107,25 @@ if __name__ == '__main__':
     stoch.set_name("stoch")
     stoch.print_body_names_in_order()
      
-    wire1 = world.add_stiff_wire(object1=stoch, local_idx1=5, pos_body1=[0,0,-0.14],
-                                    object2=stoch, local_idx2=3, pos_body2=[-0.03,0,-0.04],length=0.01)
+    wire1 = world.add_stiff_wire(object1=stoch, local_idx1=5, pos_body1=[0,0,-0.17],
+                                    object2=stoch, local_idx2=3, pos_body2=[-0.027,0,-0.0325],length=0.01)
 
-    vis.create_graphical_object(wire1, name="wire1", material="red")
+   # vis.create_graphical_object(wire1, name="wire1", material="red")
 
-    wire2 = world.add_stiff_wire(object1=stoch, local_idx1=10, pos_body1=[0,0,-0.14],
-                                    object2=stoch, local_idx2=8, pos_body2=[-0.03,0,-0.04],length=0.01)
+    wire2 = world.add_stiff_wire(object1=stoch, local_idx1=10, pos_body1=[0,0,-0.17],
+                                    object2=stoch, local_idx2=8, pos_body2=[-0.027,0,-0.0325],length=0.01)
 
-    vis.create_graphical_object(wire2, name="wire2", material="red")
+    #vis.create_graphical_object(wire2, name="wire2", material="red")
 
-    wire3 = world.add_stiff_wire(object1=stoch, local_idx1=15, pos_body1=[0,0,-0.14],
-                                    object2=stoch, local_idx2=13, pos_body2=[-0.03,0,-0.04],length=0.01)
+    wire3 = world.add_stiff_wire(object1=stoch, local_idx1=15, pos_body1=[0,0,-0.17],
+                                    object2=stoch, local_idx2=13, pos_body2=[-0.027,0,-0.0325],length=0.01)
 
-    vis.create_graphical_object(wire3, name="wire3", material="red")
+    #vis.create_graphical_object(wire3, name="wire3", material="red")
 
-    wire4 = world.add_stiff_wire(object1=stoch, local_idx1=20, pos_body1=[0,0,-0.14],
-                                    object2=stoch, local_idx2=18, pos_body2=[-0.03,0,-0.04],length=0.01)
+    wire4 = world.add_stiff_wire(object1=stoch, local_idx1=20, pos_body1=[0,0,-0.17],
+                                    object2=stoch, local_idx2=18, pos_body2=[-0.027,0,-0.0325],length=0.01)
 
-    vis.create_graphical_object(wire4, name="wire4", material="red")
+    #svis.create_graphical_object(wire4, name="wire4", material="red")
 
 
 
@@ -157,7 +157,7 @@ if __name__ == '__main__':
                 ])
             joint_velocity_target = np.zeros(26)
 
-            joint_config = joint_nominal_config + np.random.normal(0., 0.5, [27])
+            joint_config = joint_nominal_config + np.random.normal(0., 0.05, [27])
             stoch.set_pd_targets(joint_config, joint_velocity_target)
             print(joint_config)
 

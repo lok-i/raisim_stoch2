@@ -6,6 +6,8 @@
 
 #IncludeRegexTransform: 
 
+../include/benchmarkCommon.hpp
+
 ../include/guiState.hpp
 
 ../include/helper.hpp
@@ -3524,11 +3526,13 @@ iomanip
 functional
 -
 
-/home/lok/Raisim/raisim_ws/raisim_stoch2/Stoch2_walker.cpp
+/home/lok/Raisim/raisim_ws/raisim_stoch2/Stoch2_walker_benchmark.cpp
 raisim/OgreVis.hpp
 -
 raisimBasicImguiPanel.hpp
 /home/lok/Raisim/raisim_ws/raisim_stoch2/raisimBasicImguiPanel.hpp
+benchmarkCommon.hpp
+/home/lok/Raisim/raisim_ws/raisim_stoch2/benchmarkCommon.hpp
 raisimKeyboardCallback.hpp
 /home/lok/Raisim/raisim_ws/raisim_stoch2/raisimKeyboardCallback.hpp
 helper.hpp
