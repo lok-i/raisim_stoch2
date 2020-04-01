@@ -28,7 +28,7 @@
 #include "benchmarkCommon.hpp"
 #include "raisimKeyboardCallback.hpp"
 #include "helper.hpp"
-#define base_height 2
+#define base_height 0.266
 void setupCallback() {
   auto vis = raisim::OgreVis::get();
 
@@ -112,8 +112,8 @@ int main(int argc, char **argv) {
   	jointPgain(7+j)=200.0;
   	jointDgain(7+j)=10.0;
 
-  	jointPgain(8+j)=200.0;
-  	jointDgain(8+j)=10.0;
+  	jointPgain(9+j)=200.0;
+  	jointDgain(9+j)=10.0;
 
   }
  // std::cout<< "jointPgain" << jointPgain<< "\n" << "jointPgain" << jointDgain;
@@ -142,14 +142,15 @@ int main(int argc, char **argv) {
   std::srand(std::time(nullptr));
   stoch->printOutBodyNamesInOrder();
  
-  auto wire1 = world.addStiffWire(stoch, 5, {0,0,-0.14}, stoch, 3, {-0.03,0,-0.04}, 0.01);
-  //vis->createGraphicalObject(wire1, "wire1", "red");
-  auto wire2 = world.addStiffWire(stoch, 10, {0,0,-0.14}, stoch, 8, {-0.03,0,-0.04}, 0.01);
-  //vis->createGraphicalObject(wire2, "wire2", "red");
-  auto wire3 = world.addStiffWire(stoch, 15, {0,0,-0.14}, stoch, 13, {-0.03,0,-0.04}, 0.01);
-  //vis->createGraphicalObject(wire3, "wire3", "red");
-  auto wire4 = world.addStiffWire(stoch, 20, {0,0,-0.14}, stoch, 18, {-0.03,0,-0.04}, 0.01);
-  //vis->createGraphicalObject(wire4, "wire4", "red");
+  auto wire1 = world.addStiffWire(stoch, 5, {0,0,-0.17}, stoch, 3, {-0.027,0,-0.0325}, 0);
+// vis->createGraphicalObject(wire1, "wire1", "red");
+  auto wire2 = world.addStiffWire(stoch, 10, {0,0,-0.17}, stoch, 8, {-0.027,0,-0.0325}, 0);
+ //vis->createGraphicalObject(wire2, "wire2", "red");
+  auto wire3 = world.addStiffWire(stoch, 15, {0,0,-0.17}, stoch, 13, {-0.027,0,-0.0325}, 0);
+ //vis->createGraphicalObject(wire3, "wire3", "red");
+  auto wire4 = world.addStiffWire(stoch, 20, {0,0,-0.17}, stoch, 18, {-0.027,0,-0.0325}, 0);
+ //vis->createGraphicalObject(wire4, "wire4", "red");
+
 
  
   // lambda function for the controller

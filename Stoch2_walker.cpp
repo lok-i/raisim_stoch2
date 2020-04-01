@@ -124,7 +124,7 @@ int main(int argc, char **argv) {
   
   //to take random samples
   std::default_random_engine generator;
-  std::normal_distribution<double> distribution(0.0, 0.07);
+  std::normal_distribution<double> distribution(0.0, 0.05);
   std::srand(std::time(nullptr));
   stoch->printOutBodyNamesInOrder();
  
