@@ -2,14 +2,14 @@
 codebase transfer of stoch from pybullet to raisim
 
 ## Overview:
-This project is an attempt towards shifting the codebase of [Stoch2](https://cps.iisc.ac.in/research/walking-robot/) from the existing pybullet platform to raisim , a simulation engine developed by ETH Zurich owing to its speed.Taking a learning based approach which is purely data driven,certain aspects of the simulation platform hugely affect the feasibility and transferability of the very solution that is being developed.One of the key elements that makes Raisim a viable alternative is its speed,as it could speed up the process of training by a great magnitude.Also, the direct deployment of policies learnt by an agent in this platform into a real world robot ANYmal looks quite appealing.   
+This project is an attempt towards shifting the codebase of [Stoch2](https://cps.iisc.ac.in/research/walking-robot/) from the existing pybullet platform to raisim, a simulation engine developed in ETH Zurich.In Stoch2 we take a learning based aprroach which is purely data driven.Hence,certain aspects of the simulation platform hugely affect the feasibility and transferability of the very solution that is being developed.One of the key elements that makes Raisim a viable alternative is its speed,as it could speed up the process of training by a great magnitude.Also, the direct deployment of the policies learnt by an agent in this simulation engine into a real world robot ANYmal looks quite appealing.   
 
 ## Experiments:
-We tried compairing the speed of simulation with our robot model Stoch incorporated in the platform.We conducted seperates test from with implementations in both C++ and python whose results are tabulated below.
+We tried compairing the speed of simulation with our robot model Stoch incorporated in the platform.We conducted seperate test with implementations in both C++ and python whose results are tabulated below.
 
 ## Inference:
 * Raisim proves to be faster as promised and the collision bodies look far more accurate.
-* Though Raisim is faster,upon usage of [raisimpy](https://github.com/robotlearn/raisimpy) - a third party python wrapper for raisim the speed felldown by a considerable amount but still is faster than our previous bullet engine.
+* Though Raisim is faster,upon usage of raisimpy- a third party python wrapper for raisim the speed felldown by a considerable amount but still is faster than our previous bullet engine.
 
 Tested with Stoch2:-
 
@@ -25,7 +25,7 @@ Platform | Speed / frequency (Hz)
 Raisim(in python) |~110kHz 
 Raisim(in C++) | ~86 kHz
 
-Thus,as compared to our previous bullet engine Raisim proves to be **83** times faster.The drop upon usage of raisimpy is a minor tradeoff given the fast prototyping that we get in python.A more quantative study has been done by the very developers of the platform([SimBenchmark](https://leggedrobotics.github.io/SimBenchmark/)). 
+Thus,as compared to our previous bullet engine Raisim proves to be **83** times faster.The drop upon usage of raisimpy is a minor tradeoff given the fast prototyping that we get in python.A more quantative study has been done by the very developers of this platform([SimBenchmark](https://leggedrobotics.github.io/SimBenchmark/)). 
 
 
 ## Ongoing work:
